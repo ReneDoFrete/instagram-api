@@ -1375,6 +1375,75 @@ app.get('/instagram', async (req, res) => {
     }
 });
 
+// ============================================================
+// HOME TASKS
+// ============================================================
+
+app.get('/home/tasks', (req, res) => {
+    return res.json({
+        "code": 0,
+        "data": [
+            {
+                "id": "6953fae2679c227b803fd886",
+                "platform": 2,
+                "task_icon": "/admin-web/task/86003271e16a8a8dcedda88690ec17af.webp",
+                "one_icon": "/admin-web/task/5246aa2d0ea6521e3577eb89f508eed5.webp",
+                "two_icon": "/admin-web/task/ef81011f179b13c67751bfa43fe7e2c1.json",
+                "three_icon": "/admin-web/task/1e3aec970846365a20568f74950812e5.webp",
+                "title": "task.title.share_group",
+                "points_icon": "/admin-web/task/8b45aad0e1b016817a6968dd2862e491.webp",
+                "reward": 5,
+                "tags": [
+                    "task.tag.easy"
+                ],
+                "task_taken": 1,
+                "task_limit": 0,
+                "deeplink": "rn://shareLink",
+                "task_type": 10,
+                "is_start": 1
+            },
+            {
+                "id": "693fc97b85010d82c4d8eb2a",
+                "platform": 2,
+                "task_icon": "/admin-web/task/86003271e16a8a8dcedda88690ec17af.webp",
+                "one_icon": "/admin-web/task/5246aa2d0ea6521e3577eb89f508eed5.webp",
+                "two_icon": "/admin-web/task/ef81011f179b13c67751bfa43fe7e2c1.json",
+                "three_icon": "/admin-web/task/1e3aec970846365a20568f74950812e5.webp",
+                "title": "task.title.whatsapp_auto",
+                "points_icon": "/admin-web/task/8b45aad0e1b016817a6968dd2862e491.webp",
+                "reward": 60,
+                "tags": [
+                    "task.tag.easy"
+                ],
+                "task_taken": 0,
+                "task_limit": 0,
+                "deeplink": "",
+                "task_type": 7,
+                "is_start": 1
+            },
+            {
+                "id": "693fc9f985010d82c4d8eb2c",
+                "platform": 2,
+                "task_icon": "/admin-web/task/86003271e16a8a8dcedda88690ec17af.webp",
+                "one_icon": "/admin-web/task/5246aa2d0ea6521e3577eb89f508eed5.webp",
+                "two_icon": "/admin-web/task/ef81011f179b13c67751bfa43fe7e2c1.json",
+                "three_icon": "/admin-web/task/1e3aec970846365a20568f74950812e5.webp",
+                "title": "task.title.whatsapp",
+                "points_icon": "/admin-web/task/8b45aad0e1b016817a6968dd2862e491.webp",
+                "reward": 60,
+                "tags": [
+                    "task.tag.easy"
+                ],
+                "task_taken": 0,
+                "task_limit": 0,
+                "deeplink": "",
+                "task_type": 3,
+                "is_start": 1
+            }
+        ],
+        "msg": "success"
+    });
+});
 
 // ============================================================
 // 404
