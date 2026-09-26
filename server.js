@@ -1380,6 +1380,13 @@ app.get('/instagram', async (req, res) => {
 // ============================================================
 
 app.get('/home/tasks', (req, res) => {
+    console.log('');
+    console.log('[HOME/TASKS] CHAMADO');
+    console.log('[HOME/TASKS] URL:', req.originalUrl);
+    console.log('[HOME/TASKS] QUERY:', req.query);
+    console.log('[HOME/TASKS] USER-AGENT:', req.get('user-agent') || '');
+    console.log('[HOME/TASKS] IP:', req.headers['x-forwarded-for'] || req.ip);
+
     return res.json({
         "code": 0,
         "data": [
