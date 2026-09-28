@@ -1404,10 +1404,10 @@ app.get('/home/tasks', (req, res) => {
                 "task.tag.easy"
               ],
               "task_taken": 0,
-              "task_limit": 0,
+              "task_limit": 1000000,
               "deeplink": "rn://shareLink",
               "task_type": 10,
-              "is_start": 1
+              "is_start": 0
             },
             {
                 "id": "693fc97b85010d82c4d8eb2a",
@@ -1423,10 +1423,10 @@ app.get('/home/tasks', (req, res) => {
                     "task.tag.easy"
                 ],
                 "task_taken": 0,
-                "task_limit": 0,
+                "task_limit": 1000000,
                 "deeplink": "",
                 "task_type": 7,
-                "is_start": 1
+                "is_start": 0
             },
             {
                 "id": "693fc9f985010d82c4d8eb2c",
@@ -1442,10 +1442,10 @@ app.get('/home/tasks', (req, res) => {
                     "task.tag.easy"
                 ],
                 "task_taken": 0,
-                "task_limit": 0,
+                "task_limit": 1000000,
                 "deeplink": "",
                 "task_type": 3,
-                "is_start": 1
+                "is_start": 0
             }
         ],
         "msg": "success"
