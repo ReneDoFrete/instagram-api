@@ -1453,6 +1453,78 @@ app.get('/home/tasks', (req, res) => {
 });
 
 // ============================================================
+// HOME SIGNINFO
+// ============================================================
+
+app.get('/home/signinfo', (req, res) => {
+    console.log('');
+    console.log('[HOME/SIGNINFO] CHAMADO');
+    console.log('[HOME/SIGNINFO] URL:', req.originalUrl);
+    console.log('[HOME/SIGNINFO] QUERY:', req.query);
+    console.log('[HOME/SIGNINFO] USER-AGENT:', req.get('user-agent') || '');
+    console.log('[HOME/SIGNINFO] IP:', req.headers['x-forwarded-for'] || req.ip);
+
+    return res.json({
+          "code": 0,
+          "data": {
+            "is_today_sign": true,
+            "list": [
+              {
+                "title": "day 1",
+                "type": 1,
+                "desc": "highest",
+                "reward": 10,
+                "is_sign": true
+              },
+              {
+                "title": "day 2",
+                "type": 2,
+                "desc": "highest",
+                "reward": 30,
+                "is_sign": true
+              },
+              {
+                "title": "day 3",
+                "type": 3,
+                "desc": "highest",
+                "reward": 60,
+                "is_sign": true
+              },
+              {
+                "title": "day 4",
+                "type": 4,
+                "desc": "highest",
+                "reward": 90,
+                "is_sign": true
+              },
+              {
+                "title": "day 5",
+                "type": 5,
+                "desc": "highest",
+                "reward": 120,
+                "is_sign": true
+              },
+              {
+                "title": "day 6",
+                "type": 6,
+                "desc": "highest",
+                "reward": 150,
+                "is_sign": true
+              },
+              {
+                "title": "day 7",
+                "type": 7,
+                "desc": "highest",
+                "reward": 180,
+                "is_sign": true
+              }
+            ]
+          },
+          "msg": "success"
+        });
+});
+
+// ============================================================
 // 404
 // ============================================================
 
@@ -1462,6 +1534,8 @@ app.use((req, res) => {
         error: 'Rota não encontrada.'
     });
 });
+
+
 
 
 // ============================================================
