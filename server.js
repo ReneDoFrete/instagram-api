@@ -1425,7 +1425,7 @@ app.get('/home/tasks', (req, res) => {
                 "task_taken": 0,
                 "task_limit": 1000000,
                 "deeplink": "",
-                "task_type": 7,
+                "task_type": 10,
                 "is_start": 0
             },
             {
