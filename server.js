@@ -1467,7 +1467,7 @@ app.get('/home/signinfo', (req, res) => {
     return res.json({
           "code": 0,
           "data": {
-            "is_today_sign": true,
+            "is_today_sign": false,
             "list": [
               {
                 "title": "day 1",
@@ -1516,7 +1516,7 @@ app.get('/home/signinfo', (req, res) => {
                 "type": 7,
                 "desc": "highest",
                 "reward": 180,
-                "is_sign": true
+                "is_sign": false
               }
             ]
           },
