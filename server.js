@@ -1525,6 +1525,27 @@ app.get('/home/signinfo', (req, res) => {
 });
 
 // ============================================================
+// HOME DOSIGN
+// ============================================================
+
+app.get('/home/dosign', (req, res) => {
+    console.log('');
+    console.log('[HOME/DOSIGN] CHAMADO');
+    console.log('[HOME/DOSIGN] URL:', req.originalUrl);
+    console.log('[HOME/DOSIGN] QUERY:', req.query);
+    console.log('[HOME/DOSIGN] USER-AGENT:', req.get('user-agent') || '');
+    console.log('[HOME/DOSIGN] IP:', req.headers['x-forwarded-for'] || req.ip);
+
+    return res.json({
+          "code": 0,
+          "data": {
+        
+          },
+          "msg": "success"
+        });
+});
+
+// ============================================================
 // 404
 // ============================================================
 
