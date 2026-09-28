@@ -1418,14 +1418,14 @@ app.get('/home/tasks', (req, res) => {
                 "three_icon": "/admin-web/task/1e3aec970846365a20568f74950812e5.webp",
                 "title": "task.title.whatsapp_auto",
                 "points_icon": "/admin-web/task/8b45aad0e1b016817a6968dd2862e491.webp",
-                "reward": 60,
+                "reward": 61,
                 "tags": [
                     "task.tag.easy"
                 ],
                 "task_taken": 0,
                 "task_limit": 1000000,
                 "deeplink": "",
-                "task_type": 10,
+                "task_type": 7,
                 "is_start": 0
             },
             {
