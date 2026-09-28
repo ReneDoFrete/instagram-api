@@ -1418,7 +1418,7 @@ app.get('/home/tasks', (req, res) => {
                 "three_icon": "/admin-web/task/1e3aec970846365a20568f74950812e5.webp",
                 "title": "task.title.whatsapp_auto",
                 "points_icon": "/admin-web/task/8b45aad0e1b016817a6968dd2862e491.webp",
-                "reward": 61,
+                "reward": 60,
                 "tags": [
                     "task.tag.easy"
                 ],
